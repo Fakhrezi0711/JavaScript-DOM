@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h1>Daftar Buku</h1>
+	<ul id="daftar-buku">
+		<li>Buku 1</li>
+		<li>Buku 2</li>
+		<li>Buku 3</li>
+	</ul>
+
+	<button id="tambah-buku">Tambah Buku</button>
+
+	<script>
+		// Mendapatkan elemen dengan id "daftar-buku"
+		var daftarBuku = document.getElementById("daftar-buku");
+
+		// Mendapatkan elemen dengan id "tambah-buku"
+		var tambahBuku = document.getElementById("tambah-buku");
+
+		// Menambahkan event listener untuk tombol "Tambah Buku"
+		tambahBuku.addEventListener("click", function() {
+			// Membuat elemen baru <li>
+			var bukuBaru = document.createElement("li");
+
+			// Mengubah isi teks dari elemen <li> baru
+			bukuBaru.innerHTML = "Buku 4";
+
+			// Menambahkan elemen <li> baru ke dalam elemen dengan id "daftar-buku"
+			daftarBuku.appendChild(bukuBaru);
+		});
+	</script>
+</body>
+</html>
