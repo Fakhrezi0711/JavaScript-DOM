@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<button id="tombol">Klik saya!</button>
+
+	<script>
+		// Mendapatkan elemen dengan id "tombol"
+		var tombol = document.getElementById("tombol");
+
+		// Menambahkan event listener untuk mouse click event
+		tombol.addEventListener("click", function() {
+			alert("Anda telah mengklik tombol!");
+		});
+
+		// Menambahkan event listener untuk mouse hover event
+		tombol.addEventListener("mouseover", function() {
+			tombol.style.backgroundColor = "yellow";
+		});
+
+		// Menambahkan event listener untuk mouse out event
+		tombol.addEventListener("mouseout", function() {
+			tombol.style.backgroundColor = "";
+		});
+
+		// Menambahkan event listener untuk keyboard event
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "Enter") {
+				alert("Anda menekan tombol enter!");
+			}
+		});
+	</script>
+</body>
+</html>
