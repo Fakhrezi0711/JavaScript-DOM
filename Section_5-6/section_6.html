@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh penggunaan classList</title>
+	<style>
+		.merah {
+			color: red;
+		}
+
+		.besar {
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<p id="paragraf">Ini adalah paragraf.</p>
+
+	<button id="tombol-merah">Jadikan Merah</button>
+	<button id="tombol-besar">Jadikan Besar</button>
+
+	<script>
+		// Mendapatkan elemen dengan id "paragraf"
+		var paragraf = document.getElementById("paragraf");
+
+		// Mendapatkan elemen dengan id "tombol-merah"
+		var tombolMerah = document.getElementById("tombol-merah");
+
+		// Menambahkan event listener untuk tombol "Jadikan Merah"
+		tombolMerah.addEventListener("click", function() {
+			// Menambahkan kelas "merah" ke dalam elemen "paragraf"
+			paragraf.classList.add("merah");
+		});
+
+		// Mendapatkan elemen dengan id "tombol-besar"
+		var tombolBesar = document.getElementById("tombol-besar");
+
+		// Menambahkan event listener untuk tombol "Jadikan Besar"
+		tombolBesar.addEventListener("click", function() {
+			// Menambahkan kelas "besar" ke dalam elemen "paragraf"
+			paragraf.classList.add("besar");
+		});
+	</script>
+</body>
+</html>
